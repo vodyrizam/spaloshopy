@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="24px" height="25px" viewBox="0 0 24 25" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.4.2 (15855) - http://www.bohemiancoding.com/sketch -->
+    <title>share_email</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Welcome" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="06a---Blog" sketch:type="MSArtboardGroup" transform="translate(-548.000000, -1466.000000)" fill="#9BD2D8">
+            <g id="Group-Copy-2" sketch:type="MSLayerGroup" transform="translate(112.000000, 1192.332656)">
+                <path d="M448,298 C454.627417,298 460,292.627417 460,286 C460,279.372583 454.627417,274 448,274 C441.372583,274 436,279.372583 436,286 C436,292.627417 441.372583,298 448,298 Z M441.2575,281.671773 L448.020814,287.969749 L454.72,281.671773 L441.2575,281.671773 Z M440.8,282.588377 L444.543063,286.024153 L440.8,289.3949 L440.8,282.588377 Z M455.2,282.537969 L455.2,289.3949 L451.354487,286.014723 L455.2,282.537969 Z M450.717642,286.586391 L448.005289,289.113795 L445.251875,286.586391 L441.271041,290.32 L454.739537,290.32 L450.717642,286.586391 Z" id="share_email" sketch:type="MSShapeGroup"></path>
+            </g>
+        </g>
+    </g>
+</svg>
