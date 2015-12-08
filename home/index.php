@@ -23,6 +23,8 @@
     <script src="<?php echo $prefix;?>assets/js/modernizr-2.6.1.min.js"></script>
     <script src="<?php echo $prefix;?>assets/js/jquery.js"></script>
     <script src="<?php echo $prefix;?>assets/js/jquery-ui-1.10.4.custom.min.js"></script>
+    <script src="<?php echo $prefix;?>assets/js/insta.js"></script>
+
     <?php //include($prefix."static/analytics.php"); ?>
   </head>
   <body>
@@ -166,34 +168,16 @@
       
     </section>
 
-    <section class="container-fluid">
+    <section class="container-fluid insta">
       <div class="row">
-        
-        <div id="instaCarousel" class="carousel slide">
+          <h1>Follow us on Instagram</h1>
+          <div id="instaCarousel" class="carousel slide">
           <div class="carousel-inner">
             <div class="item active">
-              <blockquote>
-                <p>Thanks a lot spalosophy for coming late at nite to my place, pampering me with relaxing massage n scrub!!! The folded bed is super cool by the way!</p>
-                <footer>Sharon West</footer>
-              </blockquote>
+              <div id="instafeed"></div>
             </div>
             <div class="item">
-              <blockquote>
-                <p>Thanks a lot spalosophy for coming late at nite to my place, pampering me with relaxing massage n scrub!!! The folded bed is super cool by the way!</p>
-                <footer>Kanye West</footer>
-              </blockquote>
-            </div>
-            <div class="item">
-              <blockquote>
-                <p>Thanks a lot spalosophy for coming late at nite to my place, pampering me with relaxing massage n scrub!!! The folded bed is super cool by the way!</p>
-                <footer>Diana West</footer>
-              </blockquote>
-            </div>
-            <div class="item">
-              <blockquote>
-                <p>Thanks a lot spalosophy for coming late at nite to my place, pampering me with relaxing massage n scrub!!! The folded bed is super cool by the way!</p>
-                <footer>Western Digital</footer>
-              </blockquote>
+              <div id="instafeed2"></div>
             </div>
           </div>
           <a class="left carousel-control" href="#instaCarousel" data-slide="prev">
@@ -211,7 +195,7 @@
 
   </div>
 
-  <!--<?php include($prefix."static/footer.php"); ?>-->
+  <?php include($prefix."static/footer.php"); ?>
 
   <script src="<?php echo $prefix;?>assets/js/bootstrap.js"></script>
   <script src="<?php echo $prefix;?>assets/js/holder.js"></script>
@@ -224,10 +208,25 @@
       });
 
       $('#instaCarousel').carousel({
-        interval: 3000
+        interval: false
       });
 
     });
+
+    var feed = new Instafeed({
+     get: 'user',
+    userId: 1642349199,
+    accessToken: '1642349199.cf0499d.a41d20f533de4b2aadcc98c8edaad3bf',
+    after: function() {
+           $('#instafeed a, #instafeed2 a').each(function(){
+            $(this).addClass('col-xs-2 col-sm-4 col-md-2');
+          $(this).find('img').addClass('img-responsive');
+         });
+      },
+      limit : 5,
+      sortBy  :'most-recent'
+    });
+    feed.run();
 
   </script>
 

@@ -1227,6 +1227,95 @@ i.arrow {
   background: url('../img/chevron_dark_left.png')no-repeat;
 }
 
+
+/*==========================================
+Instagram
+==========================================*/
+.insta{
+  /*margin-top: 10px;*/
+  padding: 20px 60px 100px;
+}
+
+#instafeed a.col-md-2{
+  width: 19.667%;
+}
+
+#instafeed a img{
+  border-radius: 50%;
+}
+
+#instaCarousel .carousel-inner {
+  position: relative;
+  width: 61%;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.insta h1 {
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.insta .col-md-3,
+.insta .col-md-1,
+.insta .col-md-9{
+  padding-left : 0;
+  padding-right: 0;
+  margin-bottom: 10px;}
+
+.insta .col-md-1{
+  padding-right: 10px;
+}
+
+#instagram_list {
+  overflow   : hidden;
+  white-space: nowrap;
+  position   : relative;
+  margin-top: 10px;
+}
+
+#instagram_list li > a > img{
+  width : 100%;
+  height: auto;
+  float : left;
+  margin: 4px 0;
+}
+
+@media (min-width: 768px){
+  .insta{margin-top: 50px;}
+
+  #instagram_list {
+    height     : auto;
+    margin-left: 0; 
+    margin-bottom: 10px;
+  }
+  
+}
+
+@media (min-width: 992px){
+
+  #instagram_list {
+    height       : auto;
+    margin-left  : 0; 
+    margin-bottom: 50px;
+    margin-top   : -10px;
+  }
+
+  #instagram_list li > a > img{
+    width : 43px;
+    height: 43px;
+  } 
+}
+
+@media (min-width: 1200px){
+  #instagram_list li > a > img{
+    width : 60px;
+    height: 60px;
+  } 
+}
+
+
  /*=========================================
  Fade with Image
  =========================================*/
